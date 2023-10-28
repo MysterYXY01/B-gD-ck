@@ -1,5 +1,6 @@
 Задачи:
 1. TXT - George and Alfred
+2. Dot and next line
 
 **TXT - George and Alfred**  
 Ссылка: https://www.root-me.org/en/Challenges/Steganography/TXT-George-and-Alfred  
@@ -15,5 +16,19 @@
 ![image](https://github.com/MysterYXY01/B-gD-ck/assets/60554866/b09f7c26-0ee0-450d-bfed-619903c3d310)  
 И на этом же сайте, мы видим, что выделены слова жирным текстом, и мы понимаем, что в этом письме есть скрытый смысл, составим из данных слова фразы:  
 "Quand Voulez Vous Que Je Couche Avec Vous" (Когда Вы Хотите, Чтобы Я Переспал С Вами) - "Cette Nuit" (Этой Ночью). Теперь смысл фразы последнее скрытое предложение стал понятен.  
-**Ответ: Cette Nuit**
+**Ответ: Cette Nuit**  
+
+**Dot and next line**  
+Ссылка: https://www.root-me.org/ru/Zadachi-i-problemy/Steganografiya/Dot-and-next-line    
+Описание: «Ничего лишнего — это то, о чем постоянно говорят, но не соблюдают».    
+Решение:  
+В данном таске нам дают картинку  
+![journal](https://github.com/MysterYXY01/B-gD-ck/assets/60554866/e8dbd4c7-5446-4594-83a2-5de7cba58fb4)  
+Первое, что можно предположить по названию, так это то, что задание связано с точками. И правда расположение точек довольно хаотичное. Выдвенем два предположения:  
+1. Точка и символ над ней;
+2. Точка и символ под ней.
+Составим получившиеся фразы:  
+1. chatelet15h - это же имеет смысл
+2. urtpa det  - не понятно что это и не имеет смысла
+**Ответ: chatelet15h**
 
