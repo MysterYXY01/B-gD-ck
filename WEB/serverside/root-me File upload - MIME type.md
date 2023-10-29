@@ -1,7 +1,7 @@
 <--https://www.root-me.org/en/Challenges/Web-Server/File-upload-MIME-type-->
 
 1. Первое, что я понял, это то, что бекенд пускает картинку, с соотвествующим MIME-type. Для этого я скачал рандомную 
-   картинку из интернета и с помощью exiftool проверил её метаданные:
+   картинку из интернета, переименовал её, добавив расширение ```.php``` и с помощью exiftool проверил её метаданные:
 ![изображение](https://github.com/MysterYXY01/B-gD-ck/assets/132662542/cf3674bf-1833-4d7d-8d99-e714a3c6bbe8)  
 
 2. Далее я добавил в комментарий исполняемый php код с помощью: ```exiftool -comment="<?php phpinfo(); ?>"``` answer.php.png
