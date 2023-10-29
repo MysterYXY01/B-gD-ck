@@ -18,4 +18,5 @@
                 continue```
 
    Hashcat: ```hashcat -a 0 -m 16500 jwt.txt /usr/share/wordlists/wifite.txt```
-  
+5. Однако брутфорс толку не дал. Спустя долгое время я понял, что можно отправить в alg Значение none, что означает без подписи, итого:![изображение](https://github.com/MysterYXY01/B-gD-ck/assets/132662542/3cacd482-fb17-426c-b898-eb2e6247a47d)
+6. Получаем ответ, отправив данный токен
