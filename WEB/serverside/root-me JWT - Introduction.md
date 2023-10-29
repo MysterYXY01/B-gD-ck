@@ -6,7 +6,8 @@
 4. Сразу я не заметил, однако и на скрине видно, что подпись невалидная. Это не натолкнуло меня на мысль того, что подпись там вообще может и не быть и я решил перебором сломать
    её.
    Два варианта:
-    ```import jwt
+    ```
+    import jwt
     #encoded = jwt.encode({'username': 'admin'}, '123456', algorithm='HS256')
     encoded = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Imd1ZXN0In0.OnuZnYMdetcg7AWGV6WURn8CFSfas6AQej4V9M13nsk'
     with open('jwtwordlist', 'r') as file:
