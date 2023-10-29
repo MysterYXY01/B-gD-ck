@@ -1,0 +1,4 @@
+<--https://www.root-me.org/en/Challenges/Web-Server/HTTP-Cookies-->
+
+1. Я перехватил запрос, который менял пароль, изменил Cookie с Cookie: ch7=visiteur; ... на Cookie: ch7=admin; и отправил.
+2. В ответе мне вернулся ответ к задаче
