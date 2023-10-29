@@ -1,1 +1,4 @@
+<--https://www.root-me.org/fr/Challenges/Web-Serveur/HTTP-Redirection-invalide-->
 
+1. По заданию нужно получить доступ к index.php, отправим через intercept запрос, увидим, что страничка index.php подгружается с кодом 302(redirect), при этом html отправляется
+2. Ответ получен
